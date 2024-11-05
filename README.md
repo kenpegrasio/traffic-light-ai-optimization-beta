@@ -6,7 +6,7 @@ Welcome to the beta version of the **AI-driven Traffic Lights with Computer Visi
 
 This project combines the **YOLOv8 model** (from the Ultralytics library) with **OpenCV** to detect and count vehicles approaching the intersection. Using this data, the system adjusts the traffic light duration to allow more vehicles to pass during busy times and reduce unnecessary waiting during quiet periods. 
 
-The setup also includes **Arduino UNO** for prototyping, allowing seamless control over the lights based on vehicle count. At last, it also utilizes the **pySerial** library for Serial communication with the Arduino and **cvzone** library for drawing and labelling. 
+The setup also includes **Arduino UNO** for prototyping, allowing seamless control over the lights based on vehicle count. At last, it also utilizes the **pySerial** library for Serial communication and **cvzone** library for drawing and labelling. 
 
 Check out the full circuit schema below to try it yourself!
 
