@@ -4,9 +4,11 @@ Welcome to the beta version of the **AI-driven Traffic Lights with Computer Visi
 
 ## 🔍 How Does It Work?
 
-This project combines the **YOLOv8 model** (from the Ultralytics library) with **OpenCV** to detect and count vehicles approaching the intersection. Using this data, the system adjusts the traffic light duration to allow more vehicles to pass during busy times and reduce unnecessary waiting during quiet periods.
+This project combines the **YOLOv8 model** (from the Ultralytics library) with **OpenCV** to detect and count vehicles approaching the intersection. Using this data, the system adjusts the traffic light duration to allow more vehicles to pass during busy times and reduce unnecessary waiting during quiet periods. 
 
-The setup also includes **Arduino UNO** for prototyping, allowing seamless control over the lights based on vehicle count. Check out the full circuit schema below to try it yourself!
+The setup also includes **Arduino UNO** for prototyping, allowing seamless control over the lights based on vehicle count. At last, it also utilizes the **pySerial** library for Serial communication with the Arduino and **cvzone** library for drawing and labelling. 
+
+Check out the full circuit schema below to try it yourself!
 
 ## 🛠️ Getting Started
 
@@ -15,14 +17,14 @@ Here’s a quick guide to help you set up and test the project.
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-repo/ai-driven-traffic-lights.git
-   cd ai-driven-traffic-lights
+   git clone https://github.com/kenpegrasio/traffic-light-ai-optimization-beta.git
+   cd traffic-light-ai-optimization-beta
 2. **Install Dependencies**
 
-   This project requires Python libraries such as `Ultralytics` and `OpenCV`. Install them with:
+   This project requires Python libraries such as `Ultralytics`, `OpenCV`, `pySerial`, and `cvzone`. Install them with:
    
    ```bash
-   pip install ultralytics opencv-python
+   pip install ultralytics opencv-python pyserial cvzone
 4. **Setup the Arduino**
    
    Connect your Arduino UNO as shown in the circuit schema below, then upload the provided Arduino code to get started.
@@ -41,6 +43,8 @@ Watch as the traffic light changes duration based on real-time vehicle detection
 - **YOLOv8**: For vehicle detection and counting.
 - **OpenCV**: For image processing and video feed handling.
 - **Arduino UNO**: To control the physical traffic light prototype.
+- **pySerial**: For Serial communication
+- **cvzone**: For convenience in drawing and labelling
 
 ## 🗺️ Circuit Schema
 
